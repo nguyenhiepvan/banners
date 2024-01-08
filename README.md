@@ -32,6 +32,13 @@ It looks like the following:
 
 This service lets you generate beautiful looking social images for your PHP, Javascript, Python and Laravel packages. You have already put a lot of time and effort into your package, so why not make it look beautiful using this service.
 
+## How to use this service?
+
+```shell
+yarn install
+yarn start
+```
+
 ## Authors
 
 - Steven ([@styfle](https://twitter.com/styfle)) - [Vercel](https://vercel.com)

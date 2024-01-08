@@ -2,9 +2,11 @@ import { IncomingMessage, ServerResponse } from 'http';
 import { parseRequest } from './_lib/parser';
 import { getScreenshot } from './_lib/chromium';
 import { getHtml } from './_lib/template';
+import * as process from "process";
+require('dotenv').config()
 
-const isDev = !process.env.AWS_REGION;
-const isHtmlDebug = process.env.OG_HTML_DEBUG === '1';
+const isDev = !!process.env.APP_DEBUG;
+const isHtmlDebug = !!process.env.APP_DEBUG;
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
     try {

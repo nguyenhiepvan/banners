@@ -8,3 +8,4 @@ server/dist
 package-lock.json
 yarn.lock
 .idea
+.env
