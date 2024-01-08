@@ -3,4 +3,8 @@
 node_modules
 api/dist
 public/dist
-
+server/dist
+.gitignore
+package-lock.json
+yarn.lock
+.idea
